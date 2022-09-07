@@ -1,0 +1,178 @@
+/* basic css  */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+/*******************menu bar************/
+.menu_bar {
+    border: 1px solid gray;
+    height: 3rem;
+    /* background-color: lightblue; */
+    display: flex;
+    align-items: center;
+}
+.menu_bar>* {
+    height: 75%;
+}
+.select_f_family {
+    width: 20%;
+    border: none;
+    border-right: 1px solid gray;
+    text-align: center;
+}
+.select_f_size {
+    width: 10%;
+    border: none;
+    border-right: 1px solid gray;
+}
+.bui_container, .alignment_container {
+    border-right: 1px solid gray;
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+/*******************formula container************/
+.formula_container {
+    border: 1px solid gray;
+    height: 2rem;
+    /* background-color: lightgreen; */
+    /* flex enable -> vertical centering  */
+    display: flex;
+    align-items: center;
+}
+
+.formula_img {
+    height: 1.2rem;
+}
+
+.address_bar {
+    width: 20%;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-right: 1px solid gray;
+    margin-right: 1.5rem;
+}
+
+.formula_bar {
+    margin-left: 0.5rem;
+    width: 70%;
+    border: none;
+    border-left: 1px solid gray;
+    outline: none;
+}
+
+i {
+    color: rgb(121, 114, 114);
+}
+
+.selected {
+    color: black;
+}
+
+
+/* ******************grid container*********************/
+/* grid -> remaining height */
+.grid_container {
+    /* border: 5px solid red; */
+    height: calc(100vh - 7rem);
+    overflow: auto;
+    position: relative;
+    /* background-color: lightgrey; */
+}
+
+.cell {
+    border: 0.5px solid gray;
+    height: 1.5rem;
+    width: 5rem;
+    /* background-color: lightpink; */
+}
+
+.tl_cell {
+    height: 1.4rem;
+    width: 2rem;
+    border-right: 5px solid lightgray;
+    border-bottom: 5px solid lightgray;
+    /* position:absolute; */
+}
+
+.left_col>* {
+    width: 2rem;
+    text-align: center;
+    padding-top: 0.2rem;
+}
+
+.top_row {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 2rem;
+}
+
+.left_col {
+    position: absolute;
+    top: 1.4rem;
+}
+
+.grid {
+    position: absolute;
+    left: 2.01rem;
+}
+
+.top_row>.cell, .row>.cell {
+    padding-top: 0.2rem;
+    min-width: 5rem;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+}
+
+/* ****************sheets container************** */
+.sheets_container {
+    /* border: 1px solid gray; */
+    height: 2rem;
+    /* background-color: lightsalmon; */
+    display: flex;
+}
+
+.add_sheet {
+    height: 2rem;
+    width: 2rem;
+    border: 2px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sheet {
+    height: 2rem;
+    width: 4rem;
+    border: 1px solid gray;
+    text-align: center;
+    padding-top: 0.2rem;
+}
+.sheet {
+    background-color: lightgray;
+    height: 2rem;
+    width: 4rem;
+    border: 1px solid gray;
+    text-align: center;
+    padding-top: 0.2rem;
+}
+
+.current_sheet {
+    background-color: white;
+}
+.sheet_sub{
+    display: flex;
+}
